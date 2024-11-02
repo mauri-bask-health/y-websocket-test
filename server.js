@@ -27,11 +27,19 @@
 // });
 
 const http = require('http');
+const WebSocket = require('ws');
 const port = process.env.PORT;
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
   res.end('Server is running');
+});
+
+const wss = new WebSocket.Server({ server });
+
+wss.on('connection', (ws) => {
+  console.log('WebSocket connection established');
+  ws.send('Hello WebSocket client');
 });
 
 server.listen(port, () => {
