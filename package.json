@@ -4,7 +4,7 @@
     "main": "server.js",
     "scripts": {
       "start": "node server.js",
-      "custom-start": "HOST=0.0.0.0 y-websocket"
+      "custom-start": "HOST=0.0.0.0 PORT=10000 y-websocket"
     },
     "dependencies": {
       "y-websocket": "latest"
