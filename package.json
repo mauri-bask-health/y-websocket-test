@@ -1,9 +1,7 @@
 {
     "name": "y-websocket-server",
     "version": "1.0.0",
-    "main": "server.js",
     "scripts": {
-      "start": "node server.js",
       "custom-start": "HOST=0.0.0.0 PORT=10000 y-websocket"
     },
     "dependencies": {
