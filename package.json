@@ -7,5 +7,8 @@
     },
     "dependencies": {
       "y-websocket": "latest"
+    },
+    "engines": {
+      "node": "20.17.0"
     }
-  }
+}
